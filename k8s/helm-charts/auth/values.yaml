@@ -1,0 +1,11 @@
+replicaCount: 1 
+image:
+  repository:
+  tag: latest
+  pullPoliciy: IfNotPresent 
+
+serivce: 
+  type: ClusterIp
+  port: 5000
+
+resource: {}

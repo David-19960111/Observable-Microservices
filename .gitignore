@@ -1,0 +1,92 @@
+# =========================
+# 🐍 PYTHON
+# =========================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pdb
+*.egg-info/
+*.egg
+.Python
+.env
+.venv
+venv/
+ENV/
+env/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# =========================
+# 🐳 DOCKER
+# =========================
+# Archivos temporales de build
+*.tar
+*.log
+.dockerignore
+# Imágenes locales o cache
+.docker/
+docker-compose.override.yml
+
+# =========================
+# ☁️ TERRAFORM
+# =========================
+# Archivos locales de estado
+*.tfstate
+*.tfstate.*
+crash.log
+override.tf
+override.tf.json
+*.tfvars
+*.tfvars.json
+
+# Terraform plan outputs
+*.plan
+terraform.tfplan
+.tfplan
+
+# Carpeta de configuración local
+.terraform/
+.terraform.lock.hcl
+
+# =========================
+# 🧰 GITHUB ACTIONS / CI
+# =========================
+# Archivos de ejecución temporal
+*.tmp
+*.bak
+*.swp
+*.swo
+
+# =========================
+# 🧑‍💻 IDE / SISTEMA
+# =========================
+# VSCode
+.vscode/
+.history/
+
+# PyCharm / JetBrains
+.idea/
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+
+# =========================
+# 🔒 SENSIBLE (seguridad)
+# =========================
+# Claves o configuraciones privadas
+secrets.*
+*.pem
+*.key
+*.crt
+*.pub
+*.json
+.env.*
+
+# =========================
+# 🧩 HELM / K8S (si aplica)
+# =========================
+# Charts generados o empaquetados
+*.tgz
+.chart/
