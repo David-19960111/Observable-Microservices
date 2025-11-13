@@ -1,0 +1,21 @@
+replicaCount: 1
+
+image:
+  repository: your-dockerhub-user/frontend
+  tag: latest
+  pullPolicy: IfNotPresent
+
+service:
+  type: ClusterIP
+  port: 5002
+
+ingress:
+  enabled: true
+  className: nginx
+  hosts:
+    - host: micro.local
+      paths:
+        - path: /
+          pathType: Prefix
+
+resources: {}

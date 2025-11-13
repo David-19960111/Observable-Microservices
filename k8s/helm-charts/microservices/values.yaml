@@ -1,0 +1,14 @@
+auth:
+  image:
+    repository: your-dockerhub-user/auth
+    tag: latest
+
+api:
+  image:
+    repository: your-dockerhub-user/api
+    tag: latest
+
+frontend:
+  image:
+    repository: your-dockerhub-user/frontend
+    tag: latest

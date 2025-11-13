@@ -1,0 +1,14 @@
+apiVersion: v2
+name: microservices
+description: Parent chart for all services
+version: 0.1.0
+dependencies:
+  - name: auth
+    version: 0.1.0
+    repository: "k8s/helm-charts/auth"
+  - name: api
+    version: 0.1.0
+    repository: "k8s/helm-charts/api"
+  - name: frontend
+    version: 0.1.0
+    repository: "k8s/helm-charts/frontend"
