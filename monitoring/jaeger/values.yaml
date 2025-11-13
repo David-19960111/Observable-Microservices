@@ -1,0 +1,13 @@
+provisionDataStore:
+  cassandra: false
+  elasticsearch: false
+  kafka: false
+
+collector:
+  service:
+    type: ClusterIP
+
+query:
+  service:
+    type: NodePort
+    nodePort: 32001

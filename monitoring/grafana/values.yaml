@@ -1,0 +1,22 @@
+adminUser: admin
+adminPassword: admin123 
+
+service:
+  type: NodePort
+  nodePort: 32000
+
+datasources:
+  datasources.yaml:
+    apiVersion: 1
+    datasources:
+      - name: Prometheus
+        type: prometheus
+        url: http://prometheus-server.monitoring.svc.cluster.local
+        access: proxy
+        isDefault: true
+      - name: Loki
+        type: loki
+        url: http://loki.monitoring.svc.cluster.local
+
+dashboardsConfigMaps:
+  default: "grafana-dashboards"
